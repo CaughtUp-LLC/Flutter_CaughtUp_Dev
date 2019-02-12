@@ -357,48 +357,6 @@ class _AvailableFriendsListItemState extends State<_AvailableFriendsListItem> {
   void _sendFriendInvite(BuildContext context, int ownerPositionInFriendsList,
       var _availableFriendEventWithOverlap) {
 
-    // UNCOMMENT THIS
-//    // if chat id does not exist yet then make one
-//    // check if chat id node exist if not then create it
-//    if (userDirectChatKey == null) {
-//      userDirectChatKey = MyMessengerFirebaseUtility.createChatIDNode(
-//          UserFriendsDataList[ownerPositionInFriendsList][MyConstants.uid2],
-//          UserFriendsDataList[ownerPositionInFriendsList][MyConstants.name2],
-//          UserFriendsDataList[ownerPositionInFriendsList]
-//              [MyConstants.timestampJoined2],
-//          UserFriendsDataList[ownerPositionInFriendsList]
-//              [MyConstants.chatPhotoUrl2]);
-//    }
-
-    /// Create message to send to a friend
-    /// Setup details for invite message
-//    String eventTextMessage = SubEventDetailPage.SendUserEventEventMessage +
-//        "\n\n" +
-//        fakedata.friendWithConflict.displayName +
-//        ": " +
-//        _availableFriendEventWithOverlap[MyFBConstants.eventActivity2] +
-//        "\n" +
-//        "Time: " +
-//        MyUtility.convertDateTimeToHourMinsDisplay(
-//            MyScheduleFirebaseUtility.convertDateTimeUtcToDateTimeHourMinLocal(
-//                _availableFriendEventWithOverlap[MyFBConstants.startTime2])) +
-//        " - " +
-//        MyUtility.convertDateTimeToHourMinsDisplay(
-//            MyScheduleFirebaseUtility.convertDateTimeUtcToDateTimeHourMinLocal(
-//                _availableFriendEventWithOverlap['endTime'])) +
-//        "\n" +
-//        _availableFriendEventWithOverlap[MyFBConstants.eventNote2];
-
-//    // SendChatMessage with action (group invite) to friend with chat ID
-//    MyMessengerFirebaseUtility.sendMessage(userDirectChatKey, true,
-//        text: eventTextMessage,
-//        actionGroupName: SubEventDetailPage.SendActivityName,
-//        type: "eventInvite",
-//        actionGroupId: SubEventDetailPage.SendUserEventGroupID,
-//        GroupChatName: SubEventDetailPage.SendGroupName,
-//        // This is the owner of the event action
-//        senderId: MyAuthentication.authenticatedUser.uid);
-
     // notify user that an invite was sent or updated
     // Remove current snackbars on display
     Scaffold.of(context).removeCurrentSnackBar();
@@ -416,3 +374,5 @@ class _AvailableFriendsListItemState extends State<_AvailableFriendsListItem> {
     ));
   }
 }
+
+
