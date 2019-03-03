@@ -21,4 +21,4 @@ Flutter Mobile Development Environment for the [CaughtUp App](https://www.caught
 - [Showcase]()
 
 # References
-- Flutter[documentation](https://flutter.io/).
+- [Flutter documentation](https://flutter.io/).
